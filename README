@@ -1,0 +1,32 @@
+-----------------------
+Author: Darin Beaudreau
+Last Update: 08/28/2012
+Version: 1.0
+Language: Java
+-----------------------
+
+Description:
+
+ParticleDemo is a simple demo of some advanced graphics methods I am learning about. The first version of ParticleDemo only has one feature to showcase thus far, but will soon have more. ParticleDemo's primary purpose is to create particles and display them on screen in certain patterns according to user input.
+
+Features:
+
+As I add them, I will add new particle effects to this list, and how to use them.
+
+* Spray - This effect is created by holding down left click in the panel. You can have the spray focus at one position, or drag the mouse to change its target on the fly. The spray's effect is created by a few different constants. The first one, PARTICLE_DENSITY, is best kept low, as it is how many particles are added per cycle. The default is 20. If this constant is set lower, you will not see as many hiccups when quickly dragging the mouse. The reason for these "hiccups" is that the program first creates the particles, but then only adds one to the list of "fired" particles, so the amount of particles fired is equal to 1000 / THREAD_SLEEP_TIME, which is 20, so the amount of particles fired per second is 50. The minimum and maximum offsets are the values determining how far a particle can stray from the original target (ie: the mouse position). Adjust these however you like, but for the effect to look like a "spray", the minimum value should be kept in the 5-15 range.
+
+
+How to Use:
+
+Right now, there is only the Spray particle effect. Just point and hold down the left mouse button.
+
+
+Known Bugs:
+
+- None so far. =)
+
+
+Planned Features for v1.1:
+
+- "Fireball" effect
+- "Nova" effect
